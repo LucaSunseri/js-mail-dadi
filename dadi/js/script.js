@@ -14,11 +14,39 @@ startGame.addEventListener("click",function(){
 
   // Inizializzo le costanti dei dadi per il pc e l'utente
   const numberPc = Math.floor(Math.random() * 6) + 1;
-    // console.log(numberPc);
-  const dicePc = document.getElementById('dice-pc').innerHTML = numberPc;
+  console.log("pc",numberPc);
+
+  const dicePc = document.getElementById('dice-pc');
+  if (numberPc === 1) {
+    dicePc.className = "ls-dice dice-1";
+  } else if (numberPc === 2) {
+    dicePc.className = "ls-dice dice-2";
+  } else if (numberPc === 3) {
+    dicePc.className = "ls-dice dice-3";
+  } else if (numberPc === 4) {
+    dicePc.className = "ls-dice dice-4";
+  } else if (numberPc === 5) {
+    dicePc.className = "ls-dice dice-5";
+  } else if (numberPc === 6) {
+    dicePc.className = "ls-dice dice-6";
+  }
 
   const numberUser = Math.floor(Math.random() * 6) + 1;
-  const diceUser = document.getElementById('dice-user').innerHTML = numberUser;
+  console.log("utente",numberUser);
+  const diceUser = document.getElementById('dice-user');
+  if (numberUser === 1) {
+    diceUser.className = "ls-dice dice-1";
+  } else if (numberUser === 2) {
+    diceUser.className = "ls-dice dice-2";
+  } else if (numberUser === 3) {
+    diceUser.className = "ls-dice dice-3";
+  } else if (numberUser === 4) {
+    diceUser.className = "ls-dice dice-4";
+  } else if (numberUser === 5) {
+    diceUser.className = "ls-dice dice-5";
+  } else if (numberUser === 6) {
+    diceUser.className = "ls-dice dice-6";
+  } 
   
   // Inizializzo le costanti per il risultato
   const win = document.getElementById("win");
