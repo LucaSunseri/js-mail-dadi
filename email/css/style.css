@@ -1,0 +1,44 @@
+/* GLOBAL */
+body {
+  background-color: rgb(81, 221, 175);
+}
+
+/*diplay */
+.ls-display-block {
+  display: block;
+}
+
+.ls-display-none {
+  display: none;
+}
+
+/* HEADER */
+header {
+  height: 80px;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* MAIN */
+.ls-container {
+  width: 40%;
+  height: calc(100vh - 80px);
+  margin: 0 auto;
+}
+
+.ls-form__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ls-height {
+  height: 100vh;
+  align-items: center;
+}
+
+
+
+
