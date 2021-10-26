@@ -12,10 +12,11 @@ const startGame = document.getElementById("start");
 // Funzione che da il via al gioco al click del bottone
 startGame.addEventListener("click",function(){ 
 
-  // Inizializzo le costanti dei dadi per il pc e l'utente
+  // Inizializzo le costanti dei dadi per il PC
   const numberPc = Math.floor(Math.random() * 6) + 1;
-  console.log("pc",numberPc);
+  // console.log("pc",numberPc);
 
+  // Assegno una faccia del dado per ogni singolo numero
   const dicePc = document.getElementById('dice-pc');
   if (numberPc === 1) {
     dicePc.className = "ls-dice dice-1";
@@ -31,8 +32,11 @@ startGame.addEventListener("click",function(){
     dicePc.className = "ls-dice dice-6";
   }
 
+  // Inizializzo le costanti dei dadi per l'Utente
   const numberUser = Math.floor(Math.random() * 6) + 1;
-  console.log("utente",numberUser);
+  // console.log("utente",numberUser);
+
+  // Assegno una faccia del dado per ogni singolo numero
   const diceUser = document.getElementById('dice-user');
   if (numberUser === 1) {
     diceUser.className = "ls-dice dice-1";
