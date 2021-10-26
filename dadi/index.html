@@ -13,12 +13,46 @@
   <header class="text-center text-white">
     <h1 class="fw-bold">Gioco Dei Dadi</h1>
     <h2>Benvenuto <span id="user"></span></h2>
-    <h4>Stai per sfidare il pc al gioco dei dadi vediamo chi vincerà. <br> <span class="fw-bold">Buona Fortuna</span></h4>
+    <h4>Stai per sfidare il PC al gioco dei dadi vediamo chi vincerà.</h4>
+    <h3 class="fw-bold">Buona Fortuna</h3>
   </header>
 
   <main>
     <div class="ls-startgame">
-      <button type="button" class="btn btn-primary">Start Game</button>
+      <button id="start" type="button" class="btn btn-primary">Start Game</button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-4 d-flex flex-column align-items-center mt-5">
+          <h4>Dado PC</h4>
+          <div id="dice-pc" class="ls-dice"></div>
+        </div>
+
+        <div class="col-4 mt-5">
+
+          <div class="alert alert-success text-center mt-5 ls-hide" role="alert">
+            Complimenti hai vinto!
+          </div>
+
+          <div class="alert alert-secondary text-center mt-5 ls-hide" role="alert">
+            Avete pareggiato!
+          </div>
+
+          <div class="alert alert-danger text-center mt-5 ls-hide" role="alert">
+            Peccato hai perso, sarai più fortunato la prossima volta!
+          </div>
+
+        </div>
+
+        <div class="col-4 d-flex flex-column align-items-center mt-5">
+          <h4>Il tuo Dado</h4>
+          <div id="dice-user" class="ls-dice"></div>
+        </div>
+
+
+      </div>
     </div>
   </main>
   

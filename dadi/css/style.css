@@ -3,6 +3,14 @@ body {
   background: rgba(209, 149, 80, 0.932);
 }
 
+.ls-show {
+  display: block;
+}
+
+.ls-hide {
+  display: none;
+}
+
 /* HEADER */
 #user {
   color: rgb(180, 44, 44);
@@ -14,4 +22,17 @@ body {
 .ls-startgame {
   text-align: center;
   margin-top: 50px;
+}
+
+.ls-dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
+  color: white;
+  font-weight: 900;
+  border: 1px solid black;
+  margin-top: 25px;
 }
