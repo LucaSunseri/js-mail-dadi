@@ -1,0 +1,17 @@
+/* GLOBAL */
+body {
+  background: rgba(209, 149, 80, 0.932);
+}
+
+/* HEADER */
+#user {
+  color: rgb(180, 44, 44);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* MAIN */
+.ls-startgame {
+  text-align: center;
+  margin-top: 50px;
+}
