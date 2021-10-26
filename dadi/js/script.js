@@ -9,17 +9,33 @@ const startGame = document.getElementById("start");
 
 startGame.addEventListener("click",function(){ 
 
-  let numberPc = Math.floor(Math.random() * 6) + 1;
+  const numberPc = Math.floor(Math.random() * 6) + 1;
     // console.log(numberPc);
   const dicePc = document.getElementById('dice-pc').innerHTML = numberPc;
 
-  let numberUser = Math.floor(Math.random() * 6) + 1;
+  const numberUser = Math.floor(Math.random() * 6) + 1;
   const diceUser = document.getElementById('dice-user').innerHTML = numberUser;
 
+  let win = document.getElementById("win");
+  let same = document.getElementById("same");
+  let lose = document.getElementById("lose");
 
-
-
-
+  if (numberPc < numberUser) {
+    lose.classList.add("ls-hide");
+    same.classList.add("ls-hide");
+    win.classList.add("ls-show");
+    win.classList.remove("ls-hide");
+  } else if (numberPc === numberUser) {
+    win.classList.add("ls-hide");
+    lose.classList.add("ls-hide");
+    same.classList.add("ls-show");
+    same.classList.remove("ls-hide");
+   } else {
+    win.classList.add("ls-hide");
+    same.classList.add("ls-hide");
+    lose.classList.add("ls-show");
+    lose.classList.remove("ls-hide");
+  }
 
 });
 
